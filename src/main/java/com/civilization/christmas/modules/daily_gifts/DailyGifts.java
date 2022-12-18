@@ -92,15 +92,15 @@ public class DailyGifts {
         //Достаем из файла данные о всех игроках
         players = new ArrayList<PlayerGiftModel>();
 
-//        if (makeChristmasFile(Utils.PLAYERS_DATE_GIFTS_FILE)) {
-//            players = new ArrayList<PlayerGiftModel>(stringToArray(fileToString(Utils.PLAYERS_DATE_GIFTS_FILE), PlayerGiftModel[].class));
-//        }
+        if (makeChristmasFile(Utils.PLAYERS_DATE_GIFTS_FILE)) {
+            players = new ArrayList<PlayerGiftModel>(stringToArray(fileToString(Utils.PLAYERS_DATE_GIFTS_FILE), PlayerGiftModel[].class));
+        }
     }
 
     public void savePlayersDate() {
         //Сохраняем данные по всем игрокам
-//        makeChristmasFile(Utils.PLAYERS_DATE_GIFTS_FILE);
-//        classToFile(Utils.PLAYERS_DATE_GIFTS_FILE, players);
+        makeChristmasFile(Utils.PLAYERS_DATE_GIFTS_FILE);
+        classToFile(Utils.PLAYERS_DATE_GIFTS_FILE, players);
     }
 
     ///////////////////////////

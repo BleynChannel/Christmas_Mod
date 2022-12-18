@@ -47,7 +47,7 @@ public class GetGiftCommand {
         } else {
             long range = new Date().getTime() - playerGift.lastPick.getTime();
             if (range < 86400000L) {
-//                isCanGive = false;
+                isCanGive = false;
                 timeLeft = 86400000L - range;
             }
         }
